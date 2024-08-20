@@ -25,6 +25,26 @@ namespace ConsoleApp1
             persona.AsignarNombresCompletos();
             Console.WriteLine(persona.NombresCompletos);
 
+            //Clase profesor
+            Profesor profesor = new Profesor();
+            profesor.Name = "Hugo";
+            profesor.LastName = "Torrico";
+            profesor.Sueldo = 1500;
+            profesor.AsignarNombresCompletos();
+
+            Console.WriteLine(profesor.NombresCompletos);
+
+            //Clase estudiante
+            Estudiante estudiante = new Estudiante();
+            estudiante.Name = "Duberly";
+            estudiante.LastName = "Mondragón";
+            estudiante.Codigo = "115108";
+            estudiante.AsignarNombresCompletos();
+
+            Console.WriteLine(estudiante.NombresCompletos);
+
+
+
             Console.Read();
         }
     }
